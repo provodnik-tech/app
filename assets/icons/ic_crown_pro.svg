@@ -1,0 +1,27 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="crownGrad" x1="10" y1="12" x2="38" y2="38" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFE57F" />
+      <stop offset="30%" stop-color="#FFC107" />
+      <stop offset="70%" stop-color="#FF9800" />
+      <stop offset="100%" stop-color="#E65100" />
+    </linearGradient>
+  </defs>
+
+  <!-- Crown Drop Shadow -->
+  <ellipse cx="24" cy="38" rx="14" ry="3" fill="#000000" opacity="0.15" />
+
+  <!-- Crown Base & Spikes -->
+  <path d="M10 18L15 34H33L38 18L29 25L24 12L19 25L10 18Z" fill="url(#crownGrad)" />
+
+  <!-- Crown Bottom Rim -->
+  <rect x="14" y="32" width="20" height="4" rx="2" fill="#FFA000" />
+
+  <!-- Jewels on Spikes -->
+  <circle cx="10" cy="17" r="2.5" fill="#FFD54F" stroke="#FFE57F" stroke-width="0.5" />
+  <circle cx="24" cy="11" r="3" fill="#FFF9C4" stroke="#FFFFFF" stroke-width="0.5" />
+  <circle cx="38" cy="17" r="2.5" fill="#FFD54F" stroke="#FFE57F" stroke-width="0.5" />
+
+  <!-- Center Emerald/Ruby Accent -->
+  <circle cx="24" cy="27" r="2" fill="#00584B" />
+</svg>

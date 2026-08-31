@@ -1,0 +1,26 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="flameGradOuter" x1="24" y1="44" x2="24" y2="4" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#E65100" />
+      <stop offset="45%" stop-color="#FF6D00" />
+      <stop offset="100%" stop-color="#FFAB00" />
+    </linearGradient>
+    <linearGradient id="flameGradInner" x1="24" y1="42" x2="24" y2="16" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF6D00" />
+      <stop offset="60%" stop-color="#FFD600" />
+      <stop offset="100%" stop-color="#FFF9C4" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Outer Flame Shadow/Glow -->
+  <path d="M24 4C24 4 27.5 11 25.5 16C23.5 21 16 20 16 28C16 35.732 20.268 42 27 42C33.732 42 38 35.732 38 27C38 18 30 13 30 13C30 13 32 17 30 20C28 23 24 21 24 16C24 11 24 4 24 4Z" fill="#BF360C" opacity="0.15" transform="translate(0, 2)" />
+  
+  <!-- Outer Main Flame -->
+  <path d="M24 4C24 4 27.5 11 25.5 16C23.5 21 15 20 15 28C15 36.2843 20.7157 42 27.5 42C34.2843 42 38.5 35.5 38.5 26.5C38.5 17.5 30 13 30 13C30 13 32.5 17 30.5 20C28.5 23 24 20.5 24 15.5C24 10.5 24 4 24 4Z" fill="url(#flameGradOuter)" />
+  
+  <!-- Inner Core Flame -->
+  <path d="M25 18C25 18 27 22.5 25.5 25.5C24 28.5 19 28 19 33C19 37.4183 22.134 40.5 26.5 40.5C30.866 40.5 33.5 36.5 33.5 31C33.5 25.5 28.5 22.5 28.5 22.5C28.5 22.5 29.5 24.5 28.5 26.5C27.5 28.5 25 27 25 24C25 21 25 18 25 18Z" fill="url(#flameGradInner)" />
+
+  <!-- Core Light Spark -->
+  <ellipse cx="26" cy="35" rx="3.5" ry="4.5" fill="#FFFFFF" opacity="0.85" />
+</svg>

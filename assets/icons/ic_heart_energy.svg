@@ -1,0 +1,27 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- 3D Heart Gradient -->
+    <linearGradient id="heartGrad" x1="12" y1="8" x2="36" y2="40" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FF5252" />
+      <stop offset="30%" stop-color="#FF1744" />
+      <stop offset="70%" stop-color="#D50000" />
+      <stop offset="100%" stop-color="#880E4F" />
+    </linearGradient>
+    <linearGradient id="heartHighlight" x1="16" y1="12" x2="20" y2="24" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+
+  <!-- Heart Drop Shadow -->
+  <path d="M24 40.5C24 40.5 8 30.5 8 18.5C8 12.5 12.5 8 18.5 8C22 8 24 10.5 24 10.5C24 10.5 26 8 29.5 8C35.5 8 40 12.5 40 18.5C40 30.5 24 40.5 24 40.5Z" fill="#880E4F" opacity="0.2" transform="translate(0, 3)" />
+
+  <!-- Main 3D Heart Body -->
+  <path d="M24 39.5C24 39.5 8 29.5 8 17.5C8 11.5 12.5 7 18.5 7C22 7 24 9.5 24 9.5C24 9.5 26 7 29.5 7C35.5 7 40 11.5 40 17.5C40 29.5 24 39.5 24 39.5Z" fill="url(#heartGrad)" />
+
+  <!-- Glossy Left Bulb Highlight -->
+  <ellipse cx="17.5" cy="15" rx="5.5" ry="3.5" transform="rotate(-30 17.5 15)" fill="url(#heartHighlight)" />
+
+  <!-- Glossy Right Bulb Specular Spot -->
+  <circle cx="30" cy="13.5" r="2.5" fill="#FFFFFF" opacity="0.6" />
+</svg>

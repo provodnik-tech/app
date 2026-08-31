@@ -1,0 +1,37 @@
+<svg width="48" height="48" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="trophyGold" x1="12" y1="6" x2="36" y2="42" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#FFF59D" />
+      <stop offset="30%" stop-color="#FFD54F" />
+      <stop offset="70%" stop-color="#FFA000" />
+      <stop offset="100%" stop-color="#E65100" />
+    </linearGradient>
+    <linearGradient id="pedestalGrad" x1="14" y1="36" x2="34" y2="44" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#00584B" />
+      <stop offset="100%" stop-color="#002D26" />
+    </linearGradient>
+  </defs>
+
+  <!-- Base Shadow -->
+  <ellipse cx="24" cy="43" rx="14" ry="3" fill="#000000" opacity="0.15" />
+
+  <!-- Pedestal Base -->
+  <rect x="14" y="38" width="20" height="5" rx="2.5" fill="url(#pedestalGrad)" />
+  <path d="M18 34H30L29 38H19L18 34Z" fill="url(#trophyGold)" />
+
+  <!-- Handles -->
+  <path d="M14 14C10 14 8 18 8 22C8 26 12 28 15 28L16 25C13 25 11 23 11 21C11 19 12 17 15 17L14 14Z" fill="url(#trophyGold)" />
+  <path d="M34 14C38 14 40 18 40 22C40 26 36 28 33 28L32 25C35 25 37 23 37 21C37 19 36 17 33 17L34 14Z" fill="url(#trophyGold)" />
+
+  <!-- Main Cup Body -->
+  <path d="M14 8C14 7 15 6 16 6H32C33 6 34 7 34 8V18C34 25 29 29 24 29C19 29 14 25 14 18V8Z" fill="url(#trophyGold)" />
+
+  <!-- Cup Rim -->
+  <ellipse cx="24" cy="7.5" rx="9" ry="2" fill="#FFF9C4" />
+
+  <!-- Star on Cup -->
+  <path d="M24 12L25.2 14.8L28 15.2L26 17.2L26.5 20L24 18.6L21.5 20L22 17.2L20 15.2L22.8 14.8L24 12Z" fill="#FFFFFF" opacity="0.9" />
+
+  <!-- Glossy Reflection -->
+  <path d="M16 9C16 9 17 21 21 26C18 24 16 19 16 9Z" fill="#FFFFFF" opacity="0.4" />
+</svg>

@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Проводник — Обучающая платформа компьютерной грамотности</title>
+  <meta name="description" content="Интерактивная образовательная платформа по компьютерной грамотности с симулятором Windows 10, Windows 11 и Astra Linux 1.8.">
+  <link rel="icon" type="image/webp" href="./assets/logo.webp">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+  <!-- Шапка сайта -->
+  <header class="site-header">
+    <div class="header-container">
+      <a href="./index.html" class="brand-link">
+        <img src="./assets/logo.webp" alt="Логотип Проводник" class="brand-logo">
+        <span>Проводник</span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu">
+          <li><a href="#docs" class="nav-link">Документы и политики</a></li>
+          <li><a href="mailto:provodnik.app@ro.ru" class="nav-link">Контакты</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="btn-icon" aria-label="Переключить тему" title="Переключить тему">🌙</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Главное содержимое -->
+  <main class="main-content">
+
+    <!-- Hero Секция с точной имитацией Flutter-интерфейса приложения «Проводник» -->
+    <section class="hero-section">
+      <div class="container hero-compact">
+        
+        <div class="hero-center-content">
+          <div class="hero-badge-tag">ru.provodnik.app</div>
+          <h1 class="hero-title">Проводник</h1>
+          <p class="hero-subtitle">
+            Интерактивная кроссплатформенная платформа обучения компьютерной грамотности с микроядерным симулятором ОС и практическими сценариями.
+          </p>
+        </div>
+
+        <!-- Точная имитация интерфейса приложения «Проводник» (Flutter App Shell) -->
+        <div class="app-ui-frame">
+          
+          <!-- Верхняя панель ресурсов (TopBar) -->
+          <div class="app-ui-topbar">
+            <div class="app-ui-title">ГЛАВНАЯ</div>
+            
+            <div class="app-ui-resources">
+              <!-- Жизни / Энергия -->
+              <div class="app-pill app-pill-heart">
+                <img src="./assets/icons/ic_heart_energy.svg" alt="Жизни" class="app-pill-icon">
+                <span>5</span>
+              </div>
+              <!-- Монеты -->
+              <div class="app-pill app-pill-coin">
+                <img src="./assets/icons/ic_coin_gold.svg" alt="Монеты" class="app-pill-icon">
+                <span>120</span>
+              </div>
+              <!-- Стрик (Серия) -->
+              <div class="app-pill app-pill-streak">
+                <img src="./assets/icons/ic_flame_streak.svg" alt="Стрик" class="app-pill-icon">
+                <span>3 дня</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Тело экрана приложения -->
+          <div class="app-ui-body">
+            
+            <!-- Приветствие пользователя -->
+            <div class="app-ui-greeting">
+              <div>
+                <div class="app-greeting-name">Привет, Пользователь! 👋</div>
+                <div class="app-greeting-sub">Продолжить интерактивный урок</div>
+              </div>
+              <span class="app-badge-level">Уровень 3 • Новичок</span>
+            </div>
+
+            <!-- Главная карточка активного курса (Lesson Flow) -->
+            <div class="app-course-card">
+              <div class="app-course-header">
+                <div>
+                  <div class="app-course-tag">ОСНОВЫ ФАЙЛОВЫХ СИСТЕМ</div>
+                  <div class="app-course-lesson-title">Урок 12: Права доступа и безопасность (chmod)</div>
+                </div>
+                <span class="app-course-percent">40%</span>
+              </div>
+
+              <!-- Прогресс-бар курса -->
+              <div class="app-progress-track">
+                <div class="app-progress-fill" style="width: 40%;"></div>
+              </div>
+
+              <!-- 4-этапный цикл урока -->
+              <div class="app-lesson-steps">
+                <div class="app-step-item done">
+                  <span class="app-step-icon">📖</span>
+                  <span>Теория</span>
+                </div>
+                <div class="app-step-item active">
+                  <span class="app-step-icon">💻</span>
+                  <span>Симулятор</span>
+                </div>
+                <div class="app-step-item">
+                  <span class="app-step-icon">❓</span>
+                  <span>Квиз</span>
+                </div>
+                <div class="app-step-item">
+                  <span class="app-step-icon">🏆</span>
+                  <span>Награды</span>
+                </div>
+              </div>
+
+              <!-- Кнопка запуска -->
+              <div class="app-course-action">
+                <div class="app-btn-continue">
+                  <span>Запустить урок в симуляторе</span>
+                  <span>▶</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Блок песочниц симулятора ОС -->
+            <div class="app-sandboxes-section">
+              <div class="app-section-label">Свободная практика и симуляторы ОС</div>
+              <div class="app-os-grid">
+                <div class="app-os-card">
+                  <div class="app-os-header">
+                    <span class="app-os-logo">🪟</span>
+                    <span class="app-os-name">Windows 11</span>
+                  </div>
+                  <div class="app-os-desc">Современное меню Пуск, проводник, VFS, оконный менеджер</div>
+                </div>
+
+                <div class="app-os-card">
+                  <div class="app-os-header">
+                    <span class="app-os-logo">🐧</span>
+                    <span class="app-os-name">Astra Linux 1.8</span>
+                  </div>
+                  <div class="app-os-desc">Рабочий стол Fly, Bash-терминал, права доступа chmod</div>
+                </div>
+
+                <div class="app-os-card">
+                  <div class="app-os-header">
+                    <span class="app-os-logo">🪟</span>
+                    <span class="app-os-name">Windows 10</span>
+                  </div>
+                  <div class="app-os-desc">Классический плиточный Пуск, ленточный интерфейс</div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- Нижняя навигационная панель (BottomNavigationBar) -->
+          <div class="app-ui-bottomnav">
+            <div class="app-nav-tab active">
+              <span class="app-nav-icon">🏠</span>
+              <span>Главная</span>
+            </div>
+            <div class="app-nav-tab">
+              <span class="app-nav-icon">🎓</span>
+              <span>Обучение</span>
+            </div>
+            <div class="app-nav-tab">
+              <span class="app-nav-icon">💻</span>
+              <span>Практика</span>
+            </div>
+            <div class="app-nav-tab">
+              <span class="app-nav-icon">🎮</span>
+              <span>Игры</span>
+            </div>
+            <div class="app-nav-tab">
+              <span class="app-nav-icon">🏆</span>
+              <span>Награды</span>
+            </div>
+            <div class="app-nav-tab">
+              <span class="app-nav-icon">👤</span>
+              <span>Профиль</span>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Правовые документы -->
+    <section id="docs" class="section">
+      <div class="container container-narrow">
+        <div class="section-header">
+          <h2 class="section-title">Правовая информация</h2>
+          <p class="section-desc">
+            Официальные документы и политики мобильного приложения «Проводник» (<code>ru.provodnik.app</code>).
+          </p>
+        </div>
+
+        <div class="docs-table-wrap">
+          <table class="docs-table">
+            <thead>
+              <tr>
+                <th>Документ</th>
+                <th>Язык</th>
+                <th>Редакция</th>
+                <th style="text-align: right;">Ссылка</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  <strong>Политика конфиденциальности</strong>
+                  <div class="doc-subtext">Порядок обработки и защиты данных пользователей</div>
+                </td>
+                <td><span class="badge badge-primary">RU</span></td>
+                <td>31.08.2026</td>
+                <td style="text-align: right;">
+                  <a href="./privacy.html" class="doc-link-btn">Открыть →</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Privacy Policy</strong>
+                  <div class="doc-subtext">Information handling, advertising & local data</div>
+                </td>
+                <td><span class="badge badge-outline">EN</span></td>
+                <td>31.08.2026</td>
+                <td style="text-align: right;">
+                  <a href="./privacy-en.html" class="doc-link-btn">Open →</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Пользовательское соглашение</strong>
+                  <div class="doc-subtext">Лицензионные условия использования приложения</div>
+                </td>
+                <td><span class="badge badge-primary">RU</span></td>
+                <td>31.08.2026</td>
+                <td style="text-align: right;">
+                  <a href="./terms.html" class="doc-link-btn">Открыть →</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Terms of Use & EULA</strong>
+                  <div class="doc-subtext">End User License Agreement and terms</div>
+                </td>
+                <td><span class="badge badge-outline">EN</span></td>
+                <td>31.08.2026</td>
+                <td style="text-align: right;">
+                  <a href="./terms-en.html" class="doc-link-btn">Open →</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Согласие на обработку данных</strong>
+                  <div class="doc-subtext">Условия для показа рекламы и рекламных идентификаторов</div>
+                </td>
+                <td><span class="badge badge-accent">RU</span></td>
+                <td>31.08.2026</td>
+                <td style="text-align: right;">
+                  <a href="./consent.html" class="doc-link-btn">Открыть →</a>
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Подвал сайта -->
+  <footer class="site-footer">
+    <div class="container container-narrow">
+      <div class="footer-simple">
+        <div class="footer-simple-left">
+          <div class="footer-brand">
+            <img src="./assets/logo.webp" alt="Логотип" class="footer-logo">
+            <span>Проводник</span>
+          </div>
+          <p class="footer-copy">© 2026 «Проводник». Все права защищены.</p>
+        </div>
+
+        <div class="footer-simple-links">
+          <a href="./privacy.html">Конфиденциальность</a>
+          <a href="./terms.html">Соглашение</a>
+          <a href="./consent.html">Согласие</a>
+          <a href="mailto:provodnik.app@ro.ru">provodnik.app@ro.ru</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./script.js"></script>
+</body>
+</html>
